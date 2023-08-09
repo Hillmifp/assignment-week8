@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+body {
+  background-color: #5db0e0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 400;
+  text-shadow: #000000;
+}
+
+form {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-block-end: 1em;
+}
+
+label {
+  display: block;
+  font-size: 0.8em;
+  color: whitesmoke;
+  margin: 16px 0 6px;
+}
+
+input,
+select {
+  padding: 6px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+.field {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+button {
+  color: white;
+  border: 0;
+  background: #18245a;
+  min-width: 80px;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grid-container > div {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.cash-in {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+}
+
+.cash-out {
+  background-color: #e94f4f;
+  border-radius: 4px;
+}
+
+.total-amount {
+  background-color: aquamarine;
+  border-radius: 4px;
+}
+
+.notification {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.notification.error {
+  background-color: #f44336;
+}
